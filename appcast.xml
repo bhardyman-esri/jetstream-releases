@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Jetstream</title>
+        <item>
+            <title>1.1.0</title>
+            <pubDate>Thu, 17 Sep 2026 19:13:08 -0700</pubDate>
+            <sparkle:version>20260917.1</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.1.0-build-20260917.1/Jetstream-1.1.0-build-20260917.1.zip" length="7427102" type="application/octet-stream" sparkle:edSignature="NMqPlwy6ujfPsU8QNzIxB0Mf+hl1AOK5RGkvxYe7m6Gz2vygfO7JDEi9AGoA3ZPedwUYuFqBQNf1rNM+PNlsAA=="/>
+        </item>
+    </channel>
+</rss>

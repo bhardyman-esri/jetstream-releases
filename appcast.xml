@@ -4,6 +4,37 @@
         <title>Jetstream</title>
         <item>
             <title>1.2.0</title>
+            <pubDate>Fri, 18 Sep 2026 12:34:04 -0700</pubDate>
+            <sparkle:version>20260918.9</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Toolbar Watch List and Settings buttons now open the real Settings window</li>
+</ul>
+<p>  (Watch List Rules / Conversion Rules panes) instead of duplicate ad-hoc</p>
+<p>  popovers/sheets, matching the app-menu and menu-bar Settings behavior.</p>
+<ul>
+<li>&quot;Jetstream &gt; Settings…&quot; app-menu item now always opens on the General</li>
+</ul>
+<p>  pane instead of reopening on whatever pane (e.g. About) was last shown.</p>
+<h4>Added</h4>
+<ul>
+<li>First-run onboarding tour (`Help &gt; Jetstream Tour`), covering Workflow &amp;</li>
+</ul>
+<p>  Deliverables, adding files, converting, Watch List automation, and where</p>
+<p>  Settings/Help live.</p>
+<ul>
+<li>Settings &gt; General &gt; Export/Import Settings — save or load conversion</li>
+</ul>
+<p>  rules, the Workflow/Deliverable selection, and Watch List Rules as a JSON</p>
+<p>  file, so a configuration can be shared with a teammate or restored after</p>
+<p>  a reinstall.</p>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260918.9/Jetstream-1.2.0-build-20260918.9.zip" length="7562374" type="application/octet-stream" sparkle:edSignature="Vjvy497H+vO5VwEm9ybOz7xNGYzOlWlxTDO2olG2pxfz9fXb7Vv5HTc3xiZRWBlsglxWkyP/j3nlpCFE6VpOBg=="/>
+        </item>
+        <item>
+            <title>1.2.0</title>
             <pubDate>Fri, 18 Sep 2026 12:17:45 -0700</pubDate>
             <sparkle:version>20260918.8</sparkle:version>
             <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
@@ -63,37 +94,6 @@
 <p>  file, so a configuration can be shared with a teammate or restored after</p>
 <p>  a reinstall.</p>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260918.7/Jetstream-1.2.0-build-20260918.7.zip" length="7562044" type="application/octet-stream" sparkle:edSignature="AiPTKJNx4TySV0kvM9MblWczn9C5KIWlCU0K+2fL02gfjSY+6FVWU2jCjY2hvpjwnAtVwKXzblPiy+krAuGxAg=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Fri, 18 Sep 2026 11:02:40 -0700</pubDate>
-            <sparkle:version>20260918.5</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Toolbar Watch List and Settings buttons now open the real Settings window</li>
-</ul>
-<p>  (Watch List Rules / Conversion Rules panes) instead of duplicate ad-hoc</p>
-<p>  popovers/sheets, matching the app-menu and menu-bar Settings behavior.</p>
-<ul>
-<li>&quot;Jetstream &gt; Settings…&quot; app-menu item now always opens on the General</li>
-</ul>
-<p>  pane instead of reopening on whatever pane (e.g. About) was last shown.</p>
-<h4>Added</h4>
-<ul>
-<li>First-run onboarding tour (`Help &gt; Jetstream Tour`), covering Workflow &amp;</li>
-</ul>
-<p>  Deliverables, adding files, converting, Watch List automation, and where</p>
-<p>  Settings/Help live.</p>
-<ul>
-<li>Settings &gt; General &gt; Export/Import Settings — save or load conversion</li>
-</ul>
-<p>  rules, the Workflow/Deliverable selection, and Watch List Rules as a JSON</p>
-<p>  file, so a configuration can be shared with a teammate or restored after</p>
-<p>  a reinstall.</p>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260918.5/Jetstream-1.2.0-build-20260918.5.zip" length="7544643" type="application/octet-stream" sparkle:edSignature="r1W+klI3vBfOYuN9qpy4BzYT8cfMt/geyheZc8kgaXTgfQr8MG2JnUjAIz+4uuW/6AGngy8xR1JaxrbYBVo9Cg=="/>
         </item>
     </channel>
 </rss>

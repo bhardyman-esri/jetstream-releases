@@ -4,6 +4,16 @@
         <title>Jetstream</title>
         <item>
             <title>1.2.0</title>
+            <pubDate>Thu, 17 Sep 2026 22:22:47 -0700</pubDate>
+            <sparkle:version>20260917.7</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/bhardyman-esri/jetstream-releases/main/Jetstream-1.2.0-build-20260917.7.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260917.7/Jetstream-1.2.0-build-20260917.7.zip" length="7493392" type="application/octet-stream" sparkle:edSignature="I+ZUkRihJFBJsY6bw7nO9K8wh0o6+BeGHHJ9xTUgE408YBtJIskixXh1wOY4FqRrogc6/jEwzY0QXIfkq2RxDQ=="/>
+        </item>
+        <item>
+            <title>1.2.0</title>
             <pubDate>Thu, 17 Sep 2026 22:13:58 -0700</pubDate>
             <sparkle:version>20260917.6</sparkle:version>
             <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
@@ -21,16 +31,6 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <sparkle:releaseNotesLink>https://raw.githubusercontent.com/bhardyman-esri/jetstream-releases/main/Jetstream-1.2.0-build-20260917.5.md</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260917.5/Jetstream-1.2.0-build-20260917.5.zip" length="7491677" type="application/octet-stream" sparkle:edSignature="Y1bVjXHfoe5eMSszKDKeBAdwmTHjcRv9s38y3p701sjW9ODLJ7l23foEANxoXQUF/dD7iBlhZCcGdSJg6FLABA=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Thu, 17 Sep 2026 21:10:57 -0700</pubDate>
-            <sparkle:version>20260917.4</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/bhardyman-esri/jetstream-releases/main/Jetstream-1.2.0-build-20260917.4.md</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20260917.4/Jetstream-1.2.0-build-20260917.4.zip" length="7465961" type="application/octet-stream" sparkle:edSignature="wHA80bFsasx/XsP7xFL0PRYHgrelIwywc7FYtyvS1VTlOuFj5vNewAjTTt+DtVpin/J1gtGaEyQIinncqmIgCg=="/>
         </item>
     </channel>
 </rss>

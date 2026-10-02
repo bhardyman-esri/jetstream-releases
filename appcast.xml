@@ -3,6 +3,15 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.3.2</title>
+            <pubDate>Fri, 02 Oct 2026 15:37:45 -0700</pubDate>
+            <sparkle:version>20261002.3</sparkle:version>
+            <sparkle:shortVersionString>1.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.2-build-20261002.3/Jetstream-1.3.2-build-20261002.3.zip" length="8088512" type="application/octet-stream" sparkle:edSignature="cd4Jf3mYMP22dq9W2YaCyzdyukwSOg5G50kUIYce/wEcfpDLkicyXvLWOq0ys6LPCRIerolSqQMDNYwDDnwHAg=="/>
+        </item>
+        <item>
             <title>1.3.1</title>
             <pubDate>Fri, 02 Oct 2026 14:25:34 -0700</pubDate>
             <sparkle:version>20261002.2</sparkle:version>
@@ -115,46 +124,6 @@
 </ul>
 <p>  rows, so its numbers match warnings and the Link Report.</p>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.0-build-20261002.1/Jetstream-1.3.0-build-20261002.1.zip" length="8087522" type="application/octet-stream" sparkle:edSignature="RCnowgMyRfjIPvVEyFP9VZtpbqLEIpENIQuBDW6s/e638zETXopNgyz7QOV0RvCxmO2h9o7NvugXtV6mJua+Aw=="/>
-        </item>
-        <item>
-            <title>1.2.1</title>
-            <pubDate>Thu, 01 Oct 2026 10:15:22 -0700</pubDate>
-            <sparkle:version>20261001.2</sparkle:version>
-            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Save HTML… for FWD HTML and Outlook now writes the email document itself</li>
-</ul>
-<p>  instead of an escaped code listing, so it renders in browsers and</p>
-<p>  Dreamweaver.</p>
-<ul>
-<li>The Survey123 parameter review sheet no longer appears blank, including</li>
-</ul>
-<p>  when it follows the Marketo token/anchor warning.</p>
-<ul>
-<li>Prevent the raw SwiftPM development executable from crashing when it</li>
-</ul>
-<p>  requests notification permission without a LaunchServices app bundle.</p>
-<ul>
-<li>The exact Marketo preference-center link ending in</li>
-</ul>
-<p>  `?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##` no longer triggers the</p>
-<p>  token-and-anchor conversion blocker. Other such links still require review.</p>
-<h4>Changed</h4>
-<ul>
-<li>Moved Jetstream&#x27;s name from the toolbar into a dedicated title bar row,</li>
-</ul>
-<p>  centered across the window on a blue from the app icon&#x27;s palette (#1D5FC8,</p>
-<p>  white text at 5.96:1 contrast, WCAG AA). The toolbar and content keep their</p>
-<p>  standard appearance.</p>
-<ul>
-<li>FWD conversion now reviews Survey123 URL parameters. Hardcoded values are</li>
-</ul>
-<p>  kept by default, while parameters containing Marketo tokens are preselected</p>
-<p>  for removal; users can adjust those choices before conversion.</p>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.1-build-20261001.2/Jetstream-1.2.1-build-20261001.2.zip" length="7651332" type="application/octet-stream" sparkle:edSignature="/8z1PRMwCD4FpYdZ4y/QvSOGiPNKov03LQDrrO9vIHobPZ7TUnJQnjRJy52gp99FYhTyCRTdlQJwP4d3+F98Bw=="/>
         </item>
     </channel>
 </rss>

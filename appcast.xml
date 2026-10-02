@@ -3,6 +3,20 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.3.1</title>
+            <pubDate>Fri, 02 Oct 2026 14:25:34 -0700</pubDate>
+            <sparkle:version>20261002.2</sparkle:version>
+            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>Rotate the iPad, iPhone Duo, and iPhone preview between portrait and</li>
+</ul>
+<p>  landscape; the email reflows to the matching logical viewport dimensions.</p>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.1-build-20261002.2/Jetstream-1.3.1-build-20261002.2.zip" length="8088671" type="application/octet-stream" sparkle:edSignature="+U/mJhWel5OWEyt8LgaDb0RrlkqYFCSEHSPfDI5wW+zFbdvwOJJjFbI0CgDrIoaWIqGeQIDH078inCPzLWsFBQ=="/>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Fri, 02 Oct 2026 14:08:22 -0700</pubDate>
             <sparkle:version>20261002.1</sparkle:version>
@@ -141,170 +155,6 @@
 <p>  kept by default, while parameters containing Marketo tokens are preselected</p>
 <p>  for removal; users can adjust those choices before conversion.</p>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.1-build-20261001.2/Jetstream-1.2.1-build-20261001.2.zip" length="7651332" type="application/octet-stream" sparkle:edSignature="/8z1PRMwCD4FpYdZ4y/QvSOGiPNKov03LQDrrO9vIHobPZ7TUnJQnjRJy52gp99FYhTyCRTdlQJwP4d3+F98Bw=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Thu, 01 Oct 2026 09:24:51 -0700</pubDate>
-            <sparkle:version>20261001.1</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Added</h4>
-<ul>
-<li>Jetstream now requires a one-time team activation code on first launch,</li>
-</ul>
-<p>  entered once and remembered afterward. Since the release download is</p>
-<p>  hosted on a public GitHub Releases page (required for Sparkle</p>
-<p>  auto-updates to keep working), this activation gate is what actually</p>
-<p>  limits functional use of the app to teammates who&#x27;ve been given a code</p>
-<p>  by the admin — anyone without it only ever sees the activation prompt,</p>
-<p>  whether they&#x27;re using the interactive UI, Shortcuts/App Intents, or</p>
-<p>  Watch Folders automation.</p>
-<ul>
-<li>First-run onboarding tour (`Help &gt; Jetstream Tour`), covering Workflow &amp;</li>
-</ul>
-<p>  Deliverables, adding files, converting, Watch List automation, and where</p>
-<p>  Settings/Help live.</p>
-<ul>
-<li>Settings &gt; General &gt; Export/Import Settings — save or load conversion</li>
-</ul>
-<p>  rules, the Workflow/Deliverable selection, and Watch List Rules as a JSON</p>
-<p>  file, so a configuration can be shared with a teammate or restored after</p>
-<p>  a reinstall.</p>
-<ul>
-<li>Source, Plain Text, FWD HTML, and Outlook text panes now support native</li>
-</ul>
-<p>  macOS Find (`⌘F`), incremental matching, and Find Next/Previous—even in</p>
-<p>  read-only output.</p>
-<ul>
-<li>Image review now uses a larger, resizable review surface with 260×170 image</li>
-</ul>
-<p>  previews, labeled source and destination URLs, visible Keep switches, a</p>
-<p>  full-size browser preview, selection counts, and Keep All/Drop All controls.</p>
-<ul>
-<li>The blocking Marketo-token-plus-anchor review now offers **Skip and</li>
-</ul>
-<p>  Convert**, allowing the currently loaded source to proceed with a visible</p>
-<p>  warning through image-review reprocessing and deliverable adjustments. The</p>
-<p>  override resets when new input is loaded or the workspace is cleared.</p>
-<ul>
-<li>The primary Convert action now sits in the sidebar directly below Open File,</li>
-</ul>
-<p>  and deliverable selectors use macOS toggle switches instead of checkboxes.</p>
-<ul>
-<li>Image review now opens automatically after a conversion detects reviewable</li>
-</ul>
-<p>  images. Review Images is also available from the main toolbar, preserves the</p>
-<p>  full image inventory (including previously kept images), and reprocesses all</p>
-<p>  selected deliverables whenever the review closes.</p>
-<ul>
-<li>Image review sheet: a &quot;Review Images…&quot; button appears whenever a Calcite</li>
-</ul>
-<p>  or Outlook conversion drops any images. It opens a modal review sheet</p>
-<p>  showing each dropped image&#x27;s thumbnail, alt text, destination URL, and</p>
-<p>  source line, with a per-image &quot;Keep&quot; toggle. Applying your selections</p>
-<p>  reconverts the document with the kept images restored in their correct</p>
-<p>  position, rather than requiring manual copy/paste.</p>
-<ul>
-<li>Settings &gt; General &gt; &quot;Show app icon in Dock&quot; — hide Jetstream from the</li>
-</ul>
-<p>  Dock and Cmd-Tab while keeping the menu bar item and windows fully usable,</p>
-<p>  applied immediately without restarting.</p>
-<h4>Fixed</h4>
-<ul>
-<li>Toolbar Watch List and Settings buttons now open the real Settings window</li>
-</ul>
-<p>  (Watch List Rules / Conversion Rules panes) instead of duplicate ad-hoc</p>
-<p>  popovers/sheets, matching the app-menu and menu-bar Settings behavior.</p>
-<ul>
-<li>&quot;Jetstream &gt; Settings…&quot; app-menu item now always opens on the General</li>
-</ul>
-<p>  pane instead of reopening on whatever pane (e.g. About) was last shown.</p>
-<ul>
-<li>The line-number gutter no longer bleeds a vertical stripe up through the</li>
-</ul>
-<p>  workspace tab bar and pane headers above the editor. The text editor&#x27;s</p>
-<p>  `NSScrollView` (which hosts the gutter ruler) did not clip its own layer</p>
-<p>  to its frame, so the ruler could paint outside its allotted area and</p>
-<p>  appear on top of the SwiftUI chrome stacked above it. Each editor&#x27;s</p>
-<p>  scroll view now sets `wantsLayer = true` / `layer.masksToBounds = true`</p>
-<p>  so nothing inside it, including the gutter, can ever render outside its</p>
-<p>  own bounds. (Two earlier attempts in this cycle — removing a manual edge</p>
-<p>  stroke, then clipping the gutter&#x27;s own fill rect — were both necessary</p>
-<p>  contributing fixes but not sufficient on their own; this scroll-view-level</p>
-<p>  clip is the fix that resolved it.)</p>
-<ul>
-<li>Links containing both a Marketo token and a `#` anchor now stop conversion,</li>
-</ul>
-<p>  clear generated deliverables, and open the affected-link review immediately</p>
-<p>  instead of allowing an easy-to-miss warning.</p>
-<ul>
-<li>The menu bar&#x27;s &quot;Open Jetstream…&quot; command now recreates the main window</li>
-</ul>
-<p>  after it has been closed, instead of trying to foreground a nonexistent</p>
-<p>  `WindowGroup` window.</p>
-<ul>
-<li>&quot;Review Images…&quot; now always presents its modal sheet, even when the</li>
-</ul>
-<p>  diagnostics drawer is collapsed.</p>
-<ul>
-<li>&quot;Check for Updates…&quot; now shows only one &quot;You&#x27;re up to date&quot; confirmation;</li>
-</ul>
-<p>  Jetstream no longer duplicates Sparkle&#x27;s built-in result dialog.</p>
-<ul>
-<li>Sparkle release notes are now published with the appcast so the updater can</li>
-</ul>
-<p>  display What&#x27;s New without a download error.</p>
-<ul>
-<li>Local development builds no longer start Sparkle without packaged updater</li>
-</ul>
-<p>  metadata or display a misleading updater failure.</p>
-<ul>
-<li>Launch at Login now reports registration failures in Settings, refreshes the</li>
-</ul>
-<p>  switch from macOS&#x27;s actual state, and clearly identifies development builds</p>
-<p>  where login-item registration is unavailable.</p>
-<ul>
-<li>Redesigned Watch List settings as Watch Folders, with a prominent add action,</li>
-</ul>
-<p>  labeled controls, clearer folder paths, and accessible remove controls.</p>
-<ul>
-<li>Removed the duplicate Jetstream app-menu Settings command and corrected</li>
-</ul>
-<p>  Settings navigation so the gear opens General while Watch Folders opens its</p>
-<p>  dedicated pane.</p>
-<ul>
-<li>Calcite is now the default workflow on every launch, and workflow choices are</li>
-</ul>
-<p>  ordered alphabetically.</p>
-<ul>
-<li>&quot;Check for Updates…&quot; now always gives explicit feedback: an alert confirms</li>
-</ul>
-<p>  when Jetstream is already up to date or reports the error if the check</p>
-<p>  fails, instead of silently doing nothing when Sparkle&#x27;s own confirmation</p>
-<p>  didn&#x27;t appear.</p>
-<ul>
-<li>Calcite conversion now resolves Marketo `${...}` merge-tag tokens (e.g.</li>
-</ul>
-<p>  CTA button URLs) against their `&lt;meta default=&quot;...&quot;&gt;` declarations</p>
-<p>  instead of emitting the unresolved token, correctly excludes the logo</p>
-<p>  image via its tracking parameter instead of an incidental HTML-shape</p>
-<p>  match, restores platform-name labels (&quot;Facebook&quot;, &quot;LinkedIn&quot;, etc.) on</p>
-<p>  footer/social icon links, and now emits a warning (with line number) for</p>
-<p>  every other decorative image it drops instead of silently discarding it.</p>
-<ul>
-<li>Calcite/Outlook plain text now moves the footer&#x27;s social/community icon</li>
-</ul>
-<p>  row to appear before the legal/subscription boilerplate (with a divider</p>
-<p>  on both sides), matching the expected reading order instead of the raw</p>
-<p>  HTML source order.</p>
-<ul>
-<li>Dropped-image warnings in the diagnostics drawer now include a &quot;Copy</li>
-</ul>
-<p>  Text&quot; button that copies the ready-to-paste caption/URL text for that</p>
-<p>  image, so you can quickly restore any image Jetstream drops that you</p>
-<p>  actually want to keep.</p>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.2.0-build-20261001.1/Jetstream-1.2.0-build-20261001.1.zip" length="7611898" type="application/octet-stream" sparkle:edSignature="eoFq06qnwtJ+BHnuF+bGRKI4szvkcD9BhdxdP4nmkp35cU8Os0jLTZuPFESt0fExZy//ch4d0zFytAxzi5PCDg=="/>
         </item>
     </channel>
 </rss>

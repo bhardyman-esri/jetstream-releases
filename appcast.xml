@@ -10,6 +10,11 @@
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.2-build-20261002.3/Jetstream-1.3.2-build-20261002.3.zip" length="8088512" type="application/octet-stream" sparkle:edSignature="cd4Jf3mYMP22dq9W2YaCyzdyukwSOg5G50kUIYce/wEcfpDLkicyXvLWOq0ys6LPCRIerolSqQMDNYwDDnwHAg=="/>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Force the mounted preview renderer to lay out immediately when its</li>
+</ul>
+<p>  orientation changes, so selecting Rotate visibly updates the device frame.</p>]]></description>
         </item>
         <item>
             <title>1.3.1</title>

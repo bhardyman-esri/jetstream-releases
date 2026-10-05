@@ -3,6 +3,29 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.3.3</title>
+            <pubDate>Mon, 05 Oct 2026 09:58:56 -0700</pubDate>
+            <sparkle:version>20261005.1</sparkle:version>
+            <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>Link Report Copy Image copies a PNG of the entire sorted report, including</li>
+</ul>
+<p>  column headers and all rows, with wrapped URLs and notes.</p>
+<h4>Changed</h4>
+<ul>
+<li>The onboarding Watch Folders step now points out the menu bar paper-plane</li>
+</ul>
+<p>  icon and explains how it shows status, controls folders, and reopens the app.</p>
+<ul>
+<li>Help Center Watch Folders guidance now documents the menu bar controls and</li>
+</ul>
+<p>  clarifies that closing the main window leaves Jetstream running.</p>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.3-build-20261005.1/Jetstream-1.3.3-build-20261005.1.zip" length="8100120" type="application/octet-stream" sparkle:edSignature="DFSk5CattlLohAhi/W1j5PJTWmYlaYAV3Ihn9ILe8cXY8gGyFcdywZkGpkU92Fi7FSqTCBrCYSGTeo4bQGVIAQ=="/>
+        </item>
+        <item>
             <title>1.3.2</title>
             <pubDate>Fri, 02 Oct 2026 15:37:45 -0700</pubDate>
             <sparkle:version>20261002.3</sparkle:version>
@@ -29,106 +52,6 @@
 </ul>
 <p>  landscape; the email reflows to the matching logical viewport dimensions.</p>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.1-build-20261002.2/Jetstream-1.3.1-build-20261002.2.zip" length="8088671" type="application/octet-stream" sparkle:edSignature="+U/mJhWel5OWEyt8LgaDb0RrlkqYFCSEHSPfDI5wW+zFbdvwOJJjFbI0CgDrIoaWIqGeQIDH078inCPzLWsFBQ=="/>
-        </item>
-        <item>
-            <title>1.3.0</title>
-            <pubDate>Fri, 02 Oct 2026 14:08:22 -0700</pubDate>
-            <sparkle:version>20261002.1</sparkle:version>
-            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Added</h4>
-<ul>
-<li>Default toolbar order: Open, Paste, Review Images, Copy, Export, Watch Folders,</li>
-</ul>
-<p>  Flexible Space, Feedback, Report a Bug, Help, Settings.</p>
-<ul>
-<li>Preview tab immediately after Source: a full-workspace WebKit HTML preview</li>
-</ul>
-<p>  with an icon switcher for Fit, Desktop, Tablet, Folding Phone and Mobile,</p>
-<p>  illustrative tablet/phone silhouettes, zoom, refresh, and default-on</p>
-<p>  remote images. Links and scripts are disabled; source and exports are unchanged.</p>
-<p>  Switching tabs preserves the window size and position; the email scrolls</p>
-<p>  inside the existing workspace. Preview stays disabled until source is loaded.</p>
-<p>  iPhone Duo has unfolded (626-point) and folded (466-point) widths with</p>
-<p>  a fold/unfold control. Illustrative devices preserve portrait screen proportions</p>
-<p>  and scale as a whole to fit the window without changing responsive viewport widths.</p>
-<p>  Device frames use matching screen/body corners, thinner phone bezels and</p>
-<p>  screen-positioned camera details rather than a stretched generic enclosure.</p>
-<ul>
-<li>Link Report deliverable: tests every link and image in the source email</li>
-</ul>
-<p>  and lists each URL with its status, redirect target, link text and line</p>
-<p>  numbers. Bot-blocking sites (Facebook, LinkedIn, Cloudflare) are marked</p>
-<p>  Verify Manually instead of broken; Marketo-token domains are Not Tested;</p>
-<p>  `${variable}` links resolve from their defaults; redirects that drop</p>
-<p>  tracking parameters are flagged. Filter, search, recheck, copy and export</p>
-<p>  to CSV.</p>
-<ul>
-<li>Link Inspector: double-click a Link Report row (or use Inspect) to see</li>
-</ul>
-<p>  the link&#x27;s details, warnings and redirect chain, every line it appears</p>
-<p>  on, response time and last-checked time. Visit it, show it in the</p>
-<p>  Source tab, re-check it, or mark it as fixed.</p>
-<ul>
-<li>Settings &gt; Link Report: check images on/off, &quot;do not check&quot; rules</li>
-</ul>
-<p>  (URLs that contain / begin with / are on a domain), redirect handling</p>
-<p>  and tracking parameters, plus advanced options (user agent,</p>
-<p>  Accept-Language, timeout, request rate limit and simultaneous requests).</p>
-<ul>
-<li>Lorem ipsum check: every conversion warns, with the line number, about</li>
-</ul>
-<p>  placeholder copy (&quot;Lorem ipsum&quot;, &quot;dolor sit amet&quot;, …) left in the source.</p>
-<ul>
-<li>The Plain Text output can now be edited in place. Copy, Save and Export</li>
-</ul>
-<p>  use the edited text; an &quot;Edited&quot; badge and Revert Edits appear after</p>
-<p>  changes, and converting again replaces the edits.</p>
-<ul>
-<li>Find button on the Source tab and Find / Replace buttons on the Plain</li>
-</ul>
-<p>  Text tab. Edit &gt; Find adds Find… (⌘F), Find and Replace… (⌥⌘F), Find</p>
-<p>  Next/Previous (⌘G / ⇧⌘G) and Use Selection for Find (⌘E).</p>
-<ul>
-<li>File &gt; Open… (⌘O).</li>
-</ul>
-<h4>Changed</h4>
-<ul>
-<li>Deliverable tabs now appear only when their sidebar options are enabled.</li>
-</ul>
-<p>  Turning off the selected tab returns to Source without discarding its output.</p>
-<p>  The pill selector scrolls horizontally when space is limited.</p>
-<ul>
-<li>The Source, Plain Text, FWD HTML, Outlook, and Link Report tabs are now a</li>
-</ul>
-<p>  sliding pill switcher. The blue selection glides between tabs, and it switches</p>
-<p>  instantly when Reduce Motion is on.</p>
-<ul>
-<li>The toolbar now has a flexible space after Watch Folders by default, which</li>
-</ul>
-<p>  groups Feedback, Report a Bug, Help, and Settings on the right. A layout saved</p>
-<p>  with Customize Toolbar takes precedence.</p>
-<h4>Fixed</h4>
-<ul>
-<li>Conversion selects the generated deliverable rather than leaving Preview</li>
-</ul>
-<p>  active. Image review uses a stable snapshot, cannot open with an empty list,</p>
-<p>  and reprocesses the reviewed source once on dismissal without reopening itself.</p>
-<ul>
-<li>Calcite plain text keeps body sections such as &quot;Stay Connected&quot; in place.</li>
-</ul>
-<p>  Footer social-icon reordering now starts at identified legal/subscription</p>
-<p>  copy instead of moving preceding body content into the footer.</p>
-<ul>
-<li>Toolbar buttons have more room: icons sit clear of the title bar and</li>
-</ul>
-<p>  labels no longer crowd neighboring buttons.</p>
-<ul>
-<li>The Source line-number gutter now counts real lines instead of wrapped</li>
-</ul>
-<p>  rows, so its numbers match warnings and the Link Report.</p>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.3.0-build-20261002.1/Jetstream-1.3.0-build-20261002.1.zip" length="8087522" type="application/octet-stream" sparkle:edSignature="RCnowgMyRfjIPvVEyFP9VZtpbqLEIpENIQuBDW6s/e638zETXopNgyz7QOV0RvCxmO2h9o7NvugXtV6mJua+Aw=="/>
         </item>
     </channel>
 </rss>

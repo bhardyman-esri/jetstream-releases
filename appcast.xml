@@ -3,6 +3,30 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.2</title>
+            <pubDate>Thu, 08 Oct 2026 12:17:27 -0700</pubDate>
+            <sparkle:version>20261008.3</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<p><strong>Recovery for a crashing 1.5.1 install:</strong> download the 1.5.2 DMG, drag Jetstream into Applications, and choose Replace. Existing preferences and configuration are preserved; automatic updates resume after launch.</p>
+<h4>Changed</h4>
+<ul>
+<li>Export keeps it simple: Plain Text, FWD HTML, and Outlook HTML. Removed the Plain Text as Markdown and HTML options.</li>
+</ul>
+<h4>Added</h4>
+<ul>
+<li><strong>Export All as Package</strong> saves all three deliverables in one ZIP.</li>
+<li>Native macOS WidgetKit support adds Small and Medium Jetstream status widgets with current conversion status and shortcuts to choose an email or review. Requires App Group capability <code>group.com.esri.jetstream</code> for both app IDs.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Packaged apps explicitly load their SwiftPM resource bundle from Contents/Resources, preventing a toolchain-dependent crash at launch.</li>
+<li>About&#x27;s GitHub link now opens the public distribution repository.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.2-build-20261008.3/Jetstream-1.5.2-build-20261008.3.zip" length="10938564" type="application/octet-stream" sparkle:edSignature="tiu1ZeIznB9L4vdv2SwGHReZiu9upuJnE7S93DGIuyeNaw35d8vxmlcm+8pRMmqWdqU+kWvTyf70eVrku0/ADQ=="/>
+        </item>
+        <item>
             <title>1.5.1</title>
             <pubDate>Thu, 08 Oct 2026 12:12:11 -0700</pubDate>
             <sparkle:version>20261008.1</sparkle:version>
@@ -55,66 +79,6 @@
 <li>Release-note HTML now keeps wrapped bullets together and renders bold labels and code without stray Markdown.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.1-build-20261007.6/Jetstream-1.5.1-build-20261007.6.zip" length="10774243" type="application/octet-stream" sparkle:edSignature="eGE/47NP56hujUbEKOlHS7LifSO4NAKBWC/LTjjReTQBGS2vRFv3os9F8ObH1lPuYRWf1i/4Zl33+AAuFpQSCQ=="/>
-        </item>
-        <item>
-            <title>1.5.0</title>
-            <pubDate>Wed, 07 Oct 2026 15:53:08 -0700</pubDate>
-            <sparkle:version>20261007.5</sparkle:version>
-            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Added</h4>
-<ul>
-<li><strong>Maps.com (Beta)</strong> joins the Workflow picker when <strong>Show Beta features</strong> is enabled in Settings &gt; General. It appears as a fourth workflow in the 2×2 picker and uses Calcite rules for now; hiding beta features returns a Maps.com selection to Calcite.</li>
-<li><strong>Convert</strong> moves to the top of the sidebar. Before an email is loaded, click it or press ⌘R to choose a file and convert it.</li>
-<li>Every conversion sends a soft-focus jet stream across the title bar, in the app icon&#x27;s colors. Light and Dark mode get their own look; Reduce Motion keeps the forecast calm.</li>
-<li>Link Report now checks for the standard preference-center URL, <code>https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##</code>. Other unsubscribe/preference URLs—and a missing preference-center link—are reported as errors.</li>
-<li>Outlook can style the preference-center <strong>Update</strong> link gray (<code>#4d4d4d</code>) and underlined. You can turn this rule off in Settings &gt; Conversion Rules.</li>
-<li>Outlook keeps the Avenir web font and adds Verdana as its fallback (<code>&#x27;Avenir Next World W05&#x27;, Verdana, Arial, Helvetica, sans-serif</code>). Desktop Outlook, which can&#x27;t load web fonts, gets Verdana instead of Times New Roman.</li>
-<li>New, individually switchable Outlook rules from production review: remove the hidden preheader; replace empty spacer paragraphs (<code>&amp;nbsp;</code> or <code>&lt;br&gt;</code>, including empty Marketo blocks) with one <code>&lt;br /&gt;</code> after the paragraph above; set 14px body copy to 20px line height; remove gray link color; and style the footer as 12px <code>#6a6a6a</code> with an 18px line height.</li>
-<li>Watch Folders can <strong>Open in Jetstream</strong> instead of converting and saving. New files use the current Workflow, Deliverables, and Auto-convert settings; existing folders keep <strong>Convert and Save</strong>.</li>
-<li>The full-height home drop zone turns a dropped file into a paper ball and tosses it into a wire inbox basket. Reduce Motion skips the game.</li>
-<li>Email Preview&#x27;s <strong>Accessibility</strong> inspector checks common WCAG 2.2 issues: missing or filename alt text, unnamed or vague links, missing document language or title, layout tables without presentation semantics, heading gaps, low inline-color contrast, and text under 12px. Issues include severity and line numbers; selecting one highlights it in the preview, and <strong>Show in Source</strong> jumps to its code. <strong>Reading Order</strong> shows the screen-reader order.</li>
-<li><strong>Color vision</strong> simulation previews Deuteranopia, Protanopia, Tritanopia, and Achromatopsia in both the email and CTSS Mail, helping spot meaning that relies on color alone. Switching views gets a quick screen wipe (or fade with Reduce Motion).</li>
-<li><strong>Copy Image</strong> captures the whole email, top to bottom, with the selected color-vision simulation applied.</li>
-<li>Accessibility <strong>Read Aloud</strong> speaks the email in screen-reader order and highlights each item. Choose a voice or <strong>System Voice</strong> (which follows Spoken Content settings); Marketo tokens use their preview values.</li>
-<li>Settings &gt; <strong>Email Preview</strong> now holds Email Client, Resolve Marketo tokens, and Load remote images; the last setting is remembered.</li>
-<li>CTSS Mail shows Esri&#x27;s published, verified <strong>BIMI logo</strong> in the message header and desktop inbox. The logo is bundled, so previewing it makes no network request; other senders keep their initials.</li>
-<li>CTSS Mail&#x27;s desktop sidebar rotates through all seven brand taglines every six seconds, unless Reduce Motion is on.</li>
-<li>VoiceOver now announces status changes, including conversion results, warnings, and Link Report summaries.</li>
-<li>Link Report&#x27;s <strong>All Uses / Unique Links</strong> views show every placement or one row per URL. The <strong>Uses</strong> column counts placements; Copy, Copy Image, and CSV export follow the selected view.</li>
-<li>Email Preview resolves common Marketo tokens, including <code>:default=</code> values. Turn off <strong>Resolve Tokens</strong> to see the original tokens.</li>
-<li><strong>CTSS Mail</strong> adds a simulated email client to Desktop, Tablet, iPhone Duo, and Mobile previews. It includes mail navigation, sender and subject details, and reply actions. Desktop uses three panes; landscape Tablet and open Duo also show the inbox, while other layouts use a right-hand rail. The inbox uses the HTML title and preheader, and <strong>Email Client</strong> can be turned off to show the full device screen. The design tokens and layouts are in <code>docs/ctss-mail/STYLE-GUIDE.md</code>.</li>
-<li>Link Report no longer requests <code>mailto:</code> links. Valid addresses show <strong>OK</strong>; email links with UTM parameters are flagged <strong>Needs Change</strong> with the parameters to remove.</li>
-<li>iPhone Duo now has a clear <strong>Open | Closed</strong> control and fold marks on both sides.</li>
-<li>The onboarding tour adds <strong>Make It Yours</strong>, covering appearance, app color, window transparency, and blur.</li>
-<li><strong>Tint glass buttons</strong> adds a light app-color wash behind secondary Liquid Glass buttons; primary glass buttons use a solid app-color fill.</li>
-<li>Settings &gt; General adds System, Light, and Dark appearance modes plus eight app colors: Esri Blue, Indigo, Purple, Pink, Red, Orange, Green, and Teal. Buttons, selections, and the title bar now share one color—no more competing blues.</li>
-<li>Appearance settings also add window transparency (Opaque to 85%) and background blur (Sharp to Frosted). Editors and lists stay more opaque, the email stays solid, and Reduce Transparency keeps the window opaque. Defaults are 25% transparency and 75% blur; <strong>Reset Transparency &amp; Blur</strong> restores them.</li>
-</ul>
-<h4>Changed</h4>
-<ul>
-<li>Buttons use Liquid Glass in translucent windows and solid bezels when the window is opaque or Reduce Transparency is on. Primary actions get prominent glass; other actions use regular glass. All bezeled buttons share <code>jetstreamButton()</code>.</li>
-<li>Calcite Plain Text keeps linked headlines tidy when a section has a CTA button: the button carries the URL. Other linked headlines and list items retain theirs.</li>
-<li>Help is rewritten in plain language, adds a Settings topic, and includes screenshots of the main window, Preview, Accessibility, Review Images, link warnings, Link Report, and Settings. Click any screenshot to enlarge it.</li>
-<li>The exact preference-center URL (<code>https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##</code>) is now <strong>Auto Verified</strong> instead of Not Tested.</li>
-<li>Convert now opens the Preview tab automatically. &quot;HTML Preview&quot; is now <strong>Email Preview</strong>.</li>
-<li>Settings now slides down as a drawer in the main window; the toolbar is disabled while it is open.</li>
-<li>Removed the main-window sidebar toggle and the large <strong>Convert to …</strong> button above the source. Convert is in the sidebar (or press ⌘R).</li>
-</ul>
-<h4>Fixed</h4>
-<ul>
-<li>The Marketo token and # anchor warning now says &quot;1 link contains&quot; (not &quot;1 link contain&quot;).</li>
-<li>Outlook now widens <code>style=&quot;width: 600px&quot;</code> and <code>552px</code> declarations even when they have no trailing semicolon. Gmail&#x27;s <code>min-width: 600px</code> fix is still removed.</li>
-<li>Email Preview&#x27;s <strong>Refresh</strong> now matches the toolbar (icon and label), and <strong>Rotate</strong> is sized to match its neighbors. Refreshing spins the arrow, dims the email, then fades it back in.</li>
-<li>The sidebar&#x27;s <strong>Workflow</strong> selector is centered and slides between Calcite, Globe, and Outlook (instantly with Reduce Motion). Four or more workflows wrap into a two-column grid so labels stay visible.</li>
-<li>Settings no longer casts a heavy shadow over text and icons. Its sidebar now uses the standard macOS style, and pane titles show their names.</li>
-<li>VoiceOver now gives the Deliverables switches, Link Report search field, and decorative icons sensible descriptions.</li>
-<li>iPad preview corners now render cleanly with the email client; landscape iPhone preview no longer leaves empty space beside it.</li>
-<li>Toolbar customization works again, and custom layouts (including spaces) survive relaunch. The Settings button also stays put when the sidebar collapses or expands.</li>
-<li>The iPhone camera no longer looks like a black leaf in landscape, and the default flexible space between Watch Folders and Feedback is back.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.0-build-20261007.5/Jetstream-1.5.0-build-20261007.5.zip" length="10770615" type="application/octet-stream" sparkle:edSignature="XhAHg1lQGYc94MrQovnt2haG4Sj87bvuQPacB6eoTRN42yXxQR+Ek/e23/LoALFbIcD9LMs4v7nByfgtsV9qBw=="/>
         </item>
     </channel>
 </rss>

@@ -1,0 +1,15 @@
+<p><strong>Recovery for a crashing 1.5.1 install:</strong> download the 1.5.2 DMG, drag Jetstream into Applications, and choose Replace. Existing preferences and configuration are preserved; automatic updates resume after launch.</p>
+<h4>Changed</h4>
+<ul>
+<li>Export keeps it simple: Plain Text, FWD HTML, and Outlook HTML. Removed the Plain Text as Markdown and HTML options.</li>
+</ul>
+<h4>Added</h4>
+<ul>
+<li><strong>Export All as Package</strong> saves all three deliverables in one ZIP.</li>
+<li>Native macOS WidgetKit support adds Small and Medium Jetstream status widgets with current conversion status and shortcuts to choose an email or review. Requires App Group capability <code>group.com.esri.jetstream</code> for both app IDs.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Packaged apps explicitly load their SwiftPM resource bundle from Contents/Resources, preventing a toolchain-dependent crash at launch.</li>
+<li>About&#x27;s GitHub link now opens the public distribution repository.</li>
+</ul>

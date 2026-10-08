@@ -1,228 +1,51 @@
 <h4>Added</h4>
 <ul>
-<li>**Show Beta features** in Settings &gt; General. When it&#x27;s on, the sidebar</li>
+<li><strong>Maps.com (Beta)</strong> joins the Workflow picker when <strong>Show Beta features</strong> is enabled in Settings &gt; General. It appears as a fourth workflow in the 2×2 picker and uses Calcite rules for now; hiding beta features returns a Maps.com selection to Calcite.</li>
+<li><strong>Convert</strong> moves to the top of the sidebar. Before an email is loaded, click it or press ⌘R to choose a file and convert it.</li>
+<li>Every conversion sends a soft-focus jet stream across the title bar, in the app icon&#x27;s colors. Light and Dark mode get their own look; Reduce Motion keeps the forecast calm.</li>
+<li>Link Report now checks for the standard preference-center URL, <code>https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##</code>. Other unsubscribe/preference URLs—and a missing preference-center link—are reported as errors.</li>
+<li>Outlook can style the preference-center <strong>Update</strong> link gray (<code>#4d4d4d</code>) and underlined. You can turn this rule off in Settings &gt; Conversion Rules.</li>
+<li>Outlook keeps the Avenir web font and adds Verdana as its fallback (<code>&#x27;Avenir Next World W05&#x27;, Verdana, Arial, Helvetica, sans-serif</code>). Desktop Outlook, which can&#x27;t load web fonts, gets Verdana instead of Times New Roman.</li>
+<li>New, individually switchable Outlook rules from production review: remove the hidden preheader; replace empty spacer paragraphs (<code>&amp;nbsp;</code> or <code>&lt;br&gt;</code>, including empty Marketo blocks) with one <code>&lt;br /&gt;</code> after the paragraph above; set 14px body copy to 20px line height; remove gray link color; and style the footer as 12px <code>#6a6a6a</code> with an 18px line height.</li>
+<li>Watch Folders can <strong>Open in Jetstream</strong> instead of converting and saving. New files use the current Workflow, Deliverables, and Auto-convert settings; existing folders keep <strong>Convert and Save</strong>.</li>
+<li>The full-height home drop zone turns a dropped file into a paper ball and tosses it into a wire inbox basket. Reduce Motion skips the game.</li>
+<li>Email Preview&#x27;s <strong>Accessibility</strong> inspector checks common WCAG 2.2 issues: missing or filename alt text, unnamed or vague links, missing document language or title, layout tables without presentation semantics, heading gaps, low inline-color contrast, and text under 12px. Issues include severity and line numbers; selecting one highlights it in the preview, and <strong>Show in Source</strong> jumps to its code. <strong>Reading Order</strong> shows the screen-reader order.</li>
+<li><strong>Color vision</strong> simulation previews Deuteranopia, Protanopia, Tritanopia, and Achromatopsia in both the email and CTSS Mail, helping spot meaning that relies on color alone. Switching views gets a quick screen wipe (or fade with Reduce Motion).</li>
+<li><strong>Copy Image</strong> captures the whole email, top to bottom, with the selected color-vision simulation applied.</li>
+<li>Accessibility <strong>Read Aloud</strong> speaks the email in screen-reader order and highlights each item. Choose a voice or <strong>System Voice</strong> (which follows Spoken Content settings); Marketo tokens use their preview values.</li>
+<li>Settings &gt; <strong>Email Preview</strong> now holds Email Client, Resolve Marketo tokens, and Load remote images; the last setting is remembered.</li>
+<li>CTSS Mail shows Esri&#x27;s published, verified <strong>BIMI logo</strong> in the message header and desktop inbox. The logo is bundled, so previewing it makes no network request; other senders keep their initials.</li>
+<li>CTSS Mail&#x27;s desktop sidebar rotates through all seven brand taglines every six seconds, unless Reduce Motion is on.</li>
+<li>VoiceOver now announces status changes, including conversion results, warnings, and Link Report summaries.</li>
+<li>Link Report&#x27;s <strong>All Uses / Unique Links</strong> views show every placement or one row per URL. The <strong>Uses</strong> column counts placements; Copy, Copy Image, and CSV export follow the selected view.</li>
+<li>Email Preview resolves common Marketo tokens, including <code>:default=</code> values. Turn off <strong>Resolve Tokens</strong> to see the original tokens.</li>
+<li><strong>CTSS Mail</strong> adds a simulated email client to Desktop, Tablet, iPhone Duo, and Mobile previews. It includes mail navigation, sender and subject details, and reply actions. Desktop uses three panes; landscape Tablet and open Duo also show the inbox, while other layouts use a right-hand rail. The inbox uses the HTML title and preheader, and <strong>Email Client</strong> can be turned off to show the full device screen. The design tokens and layouts are in <code>docs/ctss-mail/STYLE-GUIDE.md</code>.</li>
+<li>Link Report no longer requests <code>mailto:</code> links. Valid addresses show <strong>OK</strong>; email links with UTM parameters are flagged <strong>Needs Change</strong> with the parameters to remove.</li>
+<li>iPhone Duo now has a clear <strong>Open | Closed</strong> control and fold marks on both sides.</li>
+<li>The onboarding tour adds <strong>Make It Yours</strong>, covering appearance, app color, window transparency, and blur.</li>
+<li><strong>Tint glass buttons</strong> adds a light app-color wash behind secondary Liquid Glass buttons; primary glass buttons use a solid app-color fill.</li>
+<li>Settings &gt; General adds System, Light, and Dark appearance modes plus eight app colors: Esri Blue, Indigo, Purple, Pink, Red, Orange, Green, and Teal. Buttons, selections, and the title bar now share one color—no more competing blues.</li>
+<li>Appearance settings also add window transparency (Opaque to 85%) and background blur (Sharp to Frosted). Editors and lists stay more opaque, the email stays solid, and Reduce Transparency keeps the window opaque. Defaults are 25% transparency and 75% blur; <strong>Reset Transparency &amp; Blur</strong> restores them.</li>
 </ul>
-<p>  Workflow picker adds **Maps.com** (Beta) as a fourth workflow, laid out as a</p>
-<p>  2×2 grid with the sliding selection pill. Maps.com uses the Calcite rules</p>
-<p>  until its own rules are defined. Turning Beta off moves a Maps.com</p>
-<p>  selection back to Calcite.</p>
-<ul>
-<li>**Convert** is now the first item in the sidebar. Clicking it (or</li>
-</ul>
-<p>  pressing ⌘R) before an email is loaded opens a file dialog, then converts</p>
-<p>  the chosen file.</p>
-<p>  It uses the same Liquid Glass style as the app&#x27;s other buttons.</p>
-<ul>
-<li>A soft-focus **jet stream** of particles, in the app icon&#x27;s colors, whooshes</li>
-</ul>
-<p>  across the blue title bar each time you convert. Light and Dark mode each</p>
-<p>  have their own style, and the effect is skipped when Reduce Motion is on.</p>
-<ul>
-<li>Link Report now requires the standard preference-center link,</li>
-</ul>
-<p>  `https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##`.</p>
-<p>  Unsubscribe or preference links with any other URL are reported as errors,</p>
-<p>  and an email with no preference-center link gets an error row.</p>
-<ul>
-<li>Outlook conversion makes the preference-center **Update** link gray</li>
-</ul>
-<p>  (`#4d4d4d`) and underlined instead of blue. Turn it off in Settings &gt;</p>
-<p>  Conversion Rules.</p>
-<ul>
-<li>Outlook conversion keeps the Avenir web font and adds Verdana as its</li>
-</ul>
-<p>  fallback (`&#x27;Avenir Next World W05&#x27;, Verdana, Arial, Helvetica, sans-serif`).</p>
-<p>  An Outlook-only style makes desktop Outlook, which can&#x27;t load web fonts, use</p>
-<p>  Verdana instead of Times New Roman.</p>
-<ul>
-<li>New Outlook rules from production review (each can be turned off in</li>
-</ul>
-<p>  Settings &gt; Conversion Rules): remove the hidden preheader, replace empty</p>
-<p>  spacer paragraphs (`&amp;nbsp;` or `&lt;br&gt;`, including empty Marketo editable</p>
-<p>  blocks) with one `&lt;br /&gt;` after the paragraph above, use a 20px line</p>
-<p>  height for 14px body copy, remove the gray color from links, and style the</p>
-<p>  footer as 12px `#6a6a6a` text with an 18px line height.</p>
-<ul>
-<li>Watch Folders can now **Open in Jetstream** instead of converting and</li>
-</ul>
-<p>  saving. New files load into the main window using the current Workflow,</p>
-<p>  Deliverables and Auto-convert settings. Choose it under **When a file</p>
-<p>  arrives** when adding or editing a Watch Folder. Existing Watch Folders keep</p>
-<p>  **Convert and Save**.</p>
-<ul>
-<li>The home drop zone now fills the full height of the Source area. Dropping</li>
-</ul>
-<p>  a file crumples it into a paper ball, the inbox turns into a wire basket,</p>
-<p>  and the ball is tossed in like a basketball shot before the email loads.</p>
-<p>  Skipped when Reduce Motion is on.</p>
-<ul>
-<li>Email Preview **Accessibility** inspector. Checks the email for common</li>
-</ul>
-<p>  WCAG 2.2 problems (missing or file-name alt text, links with no name or</p>
-<p>  vague text, missing `lang` and `&lt;title&gt;`, layout tables without</p>
-<p>  `role=&quot;presentation&quot;`, missing or skipped headings, low inline-color</p>
-<p>  contrast, text under 12 px), grouped as errors, warnings, and suggestions</p>
-<p>  with line numbers. Selecting an issue outlines the element in the preview,</p>
-<p>  including inside CTSS Mail, and **Show in Source** jumps to the code.</p>
-<p>  **Reading Order** shows the email as a screen reader reads it.</p>
-<ul>
-<li>Email Preview **Color vision** simulation: see the email and CTSS Mail as</li>
-</ul>
-<p>  readers with Deuteranopia, Protanopia, Tritanopia, or Achromatopsia would,</p>
-<p>  to check that meaning doesn&#x27;t rely on color alone. Switching wipes the new</p>
-<p>  view down the screen (a quick fade with Reduce Motion).</p>
-<ul>
-<li>Email Preview **Copy Image**: copies a picture of the entire email, top to</li>
-</ul>
-<p>  bottom, with the selected color vision simulation applied.</p>
-<ul>
-<li>Accessibility **Read Aloud**: Reading Order can speak the email in screen</li>
-</ul>
-<p>  reader order, highlighting each item as it&#x27;s read. Pick a voice, or use</p>
-<p>  **System Voice**, which follows Spoken Content (where a Siri voice can be</p>
-<p>  chosen). Marketo tokens are read as their preview values.</p>
-<ul>
-<li>Settings › **Email Preview** pane with Email Client, Resolve Marketo tokens,</li>
-</ul>
-<p>  and Load remote images. These moved out of the Preview toolbar, and Load</p>
-<p>  remote images is now remembered.</p>
-<ul>
-<li>CTSS Mail shows the sender&#x27;s **BIMI logo** for Esri emails (Esri&#x27;s</li>
-</ul>
-<p>  published, verified logo) in the message header and desktop inbox, the way</p>
-<p>  Gmail, Apple Mail, and Yahoo show verified senders. Other senders keep</p>
-<p>  initials. The logo is bundled; the preview makes no network request.</p>
-<ul>
-<li>The CTSS Mail desktop sidebar rotates through all seven brand taglines,</li>
-</ul>
-<p>  cross-fading every 6 seconds (holds still with Reduce Motion).</p>
-<ul>
-<li>VoiceOver announces status changes, such as conversion results, warnings,</li>
-</ul>
-<p>  and Link Report summaries.</p>
-<ul>
-<li>Link Report **All Uses / Unique Links** view. All Uses lists every place a</li>
-</ul>
-<p>  link appears; Unique Links lists each link once. A new **Uses** column shows</p>
-<p>  how many times each link is used in the email. Copy, Copy Image, and Export</p>
-<p>  CSV follow the selected view.</p>
-<ul>
-<li>Email Preview resolves common Marketo tokens (for example</li>
-</ul>
-<p>  `{{my.Current Year - Email}}` shows 2026, and tokens with `:default=` show</p>
-<p>  their default). Turn off **Resolve Tokens** to see them as written.</p>
-<ul>
-<li>Email Preview shows the email inside **CTSS Mail**, an illustrative email</li>
-</ul>
-<p>  client, on Desktop, Tablet, iPhone Duo, and Mobile: status bar, message</p>
-<p>  navigation, subject and sender header, and Reply / Reply All / Forward.</p>
-<p>  Desktop is a three-pane mail window (folders, inbox, reading pane);</p>
-<p>  landscape Tablet and landscape open Duo add the inbox list; landscape</p>
-<p>  iPhone, portrait open Duo, and landscape closed Duo keep the tools in a</p>
-<p>  right-hand rail. The email has padding on both sides. The inbox row shows</p>
-<p>  the subject from the HTML title and the preheader as preview text. Turn off</p>
-<p>  **Email Client** to see the full device screen; Fit is unchanged. The</p>
-<p>  client&#x27;s design tokens and layouts are documented in</p>
-<p>  `docs/ctss-mail/STYLE-GUIDE.md`.</p>
-<ul>
-<li>Link Report: `mailto:` links are no longer requested. Valid email links show</li>
-</ul>
-<p>  an envelope icon with status **OK**; email links that carry UTM parameters</p>
-<p>  are flagged **Needs Change** (a warning) and list the parameters to remove.</p>
-<ul>
-<li>iPhone Duo preview has a clear **Open | Closed** control, with fold marks on</li>
-</ul>
-<p>  both sides of the device.</p>
-<ul>
-<li>The onboarding tour has a **Make It Yours** step to pick Light or Dark, an</li>
-</ul>
-<p>  app color, window transparency and blur, using the same controls as</p>
-<p>  Settings.</p>
-<ul>
-<li>**Tint glass buttons** (on by default) lays a light wash of the app color</li>
-</ul>
-<p>  behind secondary Liquid Glass buttons; primary glass buttons are filled</p>
-<p>  with the app color.</p>
-<ul>
-<li>Settings › General › **Appearance** picker (System, Light, Dark) applies to</li>
-</ul>
-<p>  every Jetstream window, and an **App color** swatch picker (Esri Blue by</p>
-<p>  default, plus Indigo, Purple, Pink, Red, Orange, Green and Teal) tints</p>
-<p>  buttons, selections and the title bar. The title bar now uses the same</p>
-<p>  color as buttons, so Esri Blue no longer shows two different blues.</p>
-<ul>
-<li>Settings › General › **Appearance** › **Window transparency** slider, from</li>
-</ul>
-<p>  Opaque to 85% (never fully clear), and a **Background blur** slider from</p>
-<p>  Sharp (clear Liquid Glass) to Frosted (regular Liquid Glass). The desktop</p>
-<p>  shows through the sidebar and panels. Code editors and lists stay more opaque for legibility, the</p>
-<p>  email itself is never transparent, and Reduce Transparency keeps the window</p>
-<p>  opaque.</p>
-<p>  Defaults are 25% transparency and 75% blur, and **Reset Transparency &amp;</p>
-<p>  Blur** returns to them.</p>
 <h4>Changed</h4>
 <ul>
-<li>Buttons use Liquid Glass while the window is translucent (prominent glass for main actions such as Convert, Activate, and Add Watch Folder; regular glass for Open File, Paste, Copy Image, Refresh, and Rotate) and solid bezels when the window is Opaque or Reduce Transparency is on. All bezeled buttons now share one style, `jetstreamButton()`.</li>
-<li>Plain Text (Calcite): a linked headline no longer shows its URL when its section has a CTA button; the button carries the link. Linked list items and headlines in sections without a button keep their URLs.</li>
-<li>Help rewritten in plain language, with a new Settings topic and screenshots of the main window, Preview, Accessibility, Review Images, link warnings, Link Report, and Settings (click a screenshot to view it full size).</li>
-<li>The exact preference-center link</li>
+<li>Buttons use Liquid Glass in translucent windows and solid bezels when the window is opaque or Reduce Transparency is on. Primary actions get prominent glass; other actions use regular glass. All bezeled buttons share <code>jetstreamButton()</code>.</li>
+<li>Calcite Plain Text keeps linked headlines tidy when a section has a CTA button: the button carries the URL. Other linked headlines and list items retain theirs.</li>
+<li>Help is rewritten in plain language, adds a Settings topic, and includes screenshots of the main window, Preview, Accessibility, Review Images, link warnings, Link Report, and Settings. Click any screenshot to enlarge it.</li>
+<li>The exact preference-center URL (<code>https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##</code>) is now <strong>Auto Verified</strong> instead of Not Tested.</li>
+<li>Convert now opens the Preview tab automatically. &quot;HTML Preview&quot; is now <strong>Email Preview</strong>.</li>
+<li>Settings now slides down as a drawer in the main window; the toolbar is disabled while it is open.</li>
+<li>Removed the main-window sidebar toggle and the large <strong>Convert to …</strong> button above the source. Convert is in the sidebar (or press ⌘R).</li>
 </ul>
-<p>  (`https://{{my.Preference Center}}?mkt_unsubscribe=1&amp;mkt_tok=##MKT_TOK##`)</p>
-<p>  is now reported as **Auto Verified** instead of Not Tested.</p>
-<ul>
-<li>After Convert, Jetstream opens the Preview tab automatically.</li>
-<li>&quot;HTML Preview&quot; is now called **Email Preview**.</li>
-<li>Settings slides down as a drawer inside the Jetstream window, and the</li>
-</ul>
-<p>  toolbar is disabled while it&#x27;s open.</p>
-<ul>
-<li>Removed the sidebar toggle from the main window.</li>
-<li>Removed the large **Convert to …** button above the source code; use</li>
-</ul>
-<p>  **Convert** in the sidebar (or ⌘R).</p>
 <h4>Fixed</h4>
 <ul>
-<li>The Marketo token and # anchor warning now says &quot;1 link contains&quot;</li>
-</ul>
-<p>  instead of &quot;1 link contain&quot;.</p>
-<ul>
-<li>Outlook conversion now widens `style=&quot;width: 600px&quot;` (and 552px) when the</li>
-</ul>
-<p>  declaration has no trailing semicolon. The Gmail fix (`min-width: 600px`)</p>
-<p>  is still removed.</p>
-<ul>
-<li>Email Preview **Refresh** now matches the other toolbar buttons (icon and</li>
-</ul>
-<p>  label), and Rotate is sized like its neighbors. Refreshing spins the arrow,</p>
-<p>  dims the email, and fades the reloaded page back in so the reload is</p>
-<p>  visible.</p>
-<ul>
-<li>The sidebar **Workflow** selector is centered, and its selection now slides</li>
-</ul>
-<p>  between Calcite, Globe, and Outlook (it switches instantly with Reduce</p>
-<p>  Motion). With four or more workflows it wraps into a two-column grid so</p>
-<p>  labels are never cut off.</p>
-<ul>
-<li>Settings no longer casts a heavy shadow that blurred its text and icons.</li>
-</ul>
-<p>  The sidebar uses the standard macOS sidebar style and selection, and the</p>
-<p>  pane title reads as the pane name (for example &quot;General&quot;).</p>
-<ul>
-<li>VoiceOver: the Deliverables switches, Link Report search field, and</li>
-</ul>
-<p>  decorative icons now read correctly instead of &quot;switch&quot; or icon names.</p>
-<ul>
-<li>iPad preview: the lower screen corners render cleanly with the email client.</li>
-<li>Landscape iPhone preview no longer shows empty space on both sides of the</li>
-</ul>
-<p>  email client.</p>
-<ul>
-<li>The toolbar can be customized again (right-click the toolbar or choose</li>
-</ul>
-<p>  **View › Customize Toolbar…**), and custom layouts, including spaces, are</p>
-<p>  kept after relaunch.</p>
-<ul>
-<li>The Settings sidebar button stays in place when collapsing or expanding.</li>
-<li>The iPhone camera no longer draws as a black leaf in landscape.</li>
-<li>Restored the default flexible space between Watch Folders and Feedback.</li>
+<li>The Marketo token and # anchor warning now says &quot;1 link contains&quot; (not &quot;1 link contain&quot;).</li>
+<li>Outlook now widens <code>style=&quot;width: 600px&quot;</code> and <code>552px</code> declarations even when they have no trailing semicolon. Gmail&#x27;s <code>min-width: 600px</code> fix is still removed.</li>
+<li>Email Preview&#x27;s <strong>Refresh</strong> now matches the toolbar (icon and label), and <strong>Rotate</strong> is sized to match its neighbors. Refreshing spins the arrow, dims the email, then fades it back in.</li>
+<li>The sidebar&#x27;s <strong>Workflow</strong> selector is centered and slides between Calcite, Globe, and Outlook (instantly with Reduce Motion). Four or more workflows wrap into a two-column grid so labels stay visible.</li>
+<li>Settings no longer casts a heavy shadow over text and icons. Its sidebar now uses the standard macOS style, and pane titles show their names.</li>
+<li>VoiceOver now gives the Deliverables switches, Link Report search field, and decorative icons sensible descriptions.</li>
+<li>iPad preview corners now render cleanly with the email client; landscape iPhone preview no longer leaves empty space beside it.</li>
+<li>Toolbar customization works again, and custom layouts (including spaces) survive relaunch. The Settings button also stays put when the sidebar collapses or expands.</li>
+<li>The iPhone camera no longer looks like a black leaf in landscape, and the default flexible space between Watch Folders and Feedback is back.</li>
 </ul>

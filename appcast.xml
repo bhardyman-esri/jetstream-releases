@@ -9,7 +9,13 @@
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Changed</h4>
+            <description><![CDATA[<h4>Launch-crash recovery</h4>
+<ul>
+<li>Fixed the startup crash caused by SwiftPM resource-bundle lookup.</li>
+<li>About's GitHub link now opens the public distribution repository.</li>
+</ul>
+<p>If Jetstream crashes at launch, download this release's DMG, drag Jetstream into Applications, and choose Replace. Your preferences and configuration are preserved. Automatic updates resume after the corrected app launches.</p>
+<h4>Changed</h4>
 <ul>
 <li>Export now names each result explicitly and includes FWD HTML and Outlook HTML. Suggested filenames identify the deliverable instead of &quot;output.&quot;</li>
 <li><strong>Clear Workspace</strong> moves out of Export and into the main toolbar, directly after Export.</li>

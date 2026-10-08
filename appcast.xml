@@ -4,6 +4,30 @@
         <title>Jetstream</title>
         <item>
             <title>1.5.1</title>
+            <pubDate>Thu, 08 Oct 2026 12:12:11 -0700</pubDate>
+            <sparkle:version>20261008.1</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>Export now names each result explicitly and includes FWD HTML and Outlook HTML. Suggested filenames identify the deliverable instead of &quot;output.&quot;</li>
+<li><strong>Clear Workspace</strong> moves out of Export and into the main toolbar, directly after Export.</li>
+<li>A shorter, four-step onboarding tour focuses on choosing deliverables, adding an email, converting, and reviewing. Maps.com Beta gets a mention; appearance controls stay in Settings.</li>
+<li>Release notes are tighter, with a little personality and no feature amnesia.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Calcite keeps inline body links beside their linked text instead of moving their URLs to the end of the paragraph. Preference-update footer links keep their separate-line format.</li>
+<li>Primary buttons, including <strong>Convert</strong>, now use a solid app-color fill so they stand out in translucent windows.</li>
+<li>Maps.com emails now show the Maps.com sender name and bundled brand logo in Email Preview.</li>
+<li>Worked around an Xcode 26.6 compiler crash in the Launch at Login toggle.</li>
+<li>Release-note HTML now keeps wrapped bullets together and renders bold labels and code without stray Markdown.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.1-build-20261008.1/Jetstream-1.5.1-build-20261008.1.zip" length="10938543" type="application/octet-stream" sparkle:edSignature="ZS4bX6DL1DmCLswyEoIhLUMf+qvpzUe0bb4zNNnZTWiMhA3bJwTb8bEfhh+SkKhoSKTE0/7tDzdhEKX17t+tCw=="/>
+        </item>
+        <item>
+            <title>1.5.1</title>
             <pubDate>Wed, 07 Oct 2026 17:15:48 -0700</pubDate>
             <sparkle:version>20261007.6</sparkle:version>
             <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
@@ -85,20 +109,6 @@
 <li>The iPhone camera no longer looks like a black leaf in landscape, and the default flexible space between Watch Folders and Feedback is back.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.0-build-20261007.5/Jetstream-1.5.0-build-20261007.5.zip" length="10770615" type="application/octet-stream" sparkle:edSignature="XhAHg1lQGYc94MrQovnt2haG4Sj87bvuQPacB6eoTRN42yXxQR+Ek/e23/LoALFbIcD9LMs4v7nByfgtsV9qBw=="/>
-        </item>
-        <item>
-            <title>1.4.1</title>
-            <pubDate>Wed, 07 Oct 2026 08:30:54 -0700</pubDate>
-            <sparkle:version>20261007.3</sparkle:version>
-            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Restored the Calcite, Globe, and Outlook workflow pills in the expanded</li>
-</ul>
-<p>  workspace sidebar. The compact sidebar retains its workflow icons.</p>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.4.1-build-20261007.3/Jetstream-1.4.1-build-20261007.3.zip" length="8194019" type="application/octet-stream" sparkle:edSignature="rDJrtbmin6UAuf8ZVXqKskGKnyBl7/IpUKsBwibZNzt9oXmaVzwkuQ4CvHqXBUskU8jgi/ATK6IEDJkZgGSCDA=="/>
         </item>
     </channel>
 </rss>

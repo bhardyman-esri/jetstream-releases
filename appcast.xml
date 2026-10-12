@@ -3,6 +3,19 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.5</title>
+            <pubDate>Mon, 12 Oct 2026 12:18:39 -0700</pubDate>
+            <sparkle:version>20261012.1</sparkle:version>
+            <sparkle:shortVersionString>1.5.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Calcite/Outlook HTML-to-text conversion now decodes curly double-quote entities (<code>&amp;ldquo;</code> and <code>&amp;rdquo;</code>) instead of leaving them visible in emails.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.5-build-20261012.1/Jetstream-1.5.5-build-20261012.1.zip" length="10936691" type="application/octet-stream" sparkle:edSignature="UqQCsM37koDj94euwoafZkPctRMcYn3gnc4b+I1XvB+Hwky71AkGtHyTlJp4vBT+4BMZaGmklXrDzcvfCcN+DA=="/>
+        </item>
+        <item>
             <title>1.5.4</title>
             <pubDate>Fri, 09 Oct 2026 15:03:10 -0700</pubDate>
             <sparkle:version>20261009.1</sparkle:version>
@@ -29,30 +42,6 @@
 <li>Outlook&#x27;s footer preference-center link now matches the surrounding gray text (#6a6a6a) and keeps its underline even with nested decoration styles.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.3-build-20261008.4/Jetstream-1.5.3-build-20261008.4.zip" length="10938494" type="application/octet-stream" sparkle:edSignature="Fbs/G8usfrzmwa/QlyjvQi9r5SHyVdFuJaC11IFmhcw1vl5tW+bFHmQyjmv6eVymdruG025J+y7QM12yJtJ/Aw=="/>
-        </item>
-        <item>
-            <title>1.5.2</title>
-            <pubDate>Thu, 08 Oct 2026 12:17:27 -0700</pubDate>
-            <sparkle:version>20261008.3</sparkle:version>
-            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<p><strong>Recovery for a crashing 1.5.1 install:</strong> download the 1.5.2 DMG, drag Jetstream into Applications, and choose Replace. Existing preferences and configuration are preserved; automatic updates resume after launch.</p>
-<h4>Changed</h4>
-<ul>
-<li>Export keeps it simple: Plain Text, FWD HTML, and Outlook HTML. Removed the Plain Text as Markdown and HTML options.</li>
-</ul>
-<h4>Added</h4>
-<ul>
-<li><strong>Export All as Package</strong> saves all three deliverables in one ZIP.</li>
-<li>Native macOS WidgetKit support adds Small and Medium Jetstream status widgets with current conversion status and shortcuts to choose an email or review. Requires App Group capability <code>group.com.esri.jetstream</code> for both app IDs.</li>
-</ul>
-<h4>Fixed</h4>
-<ul>
-<li>Packaged apps explicitly load their SwiftPM resource bundle from Contents/Resources, preventing a toolchain-dependent crash at launch.</li>
-<li>About&#x27;s GitHub link now opens the public distribution repository.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.2-build-20261008.3/Jetstream-1.5.2-build-20261008.3.zip" length="10938564" type="application/octet-stream" sparkle:edSignature="tiu1ZeIznB9L4vdv2SwGHReZiu9upuJnE7S93DGIuyeNaw35d8vxmlcm+8pRMmqWdqU+kWvTyf70eVrku0/ADQ=="/>
         </item>
     </channel>
 </rss>

@@ -3,6 +3,19 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.7</title>
+            <pubDate>Tue, 13 Oct 2026 18:19:10 -0700</pubDate>
+            <sparkle:version>20261013.4</sparkle:version>
+            <sparkle:shortVersionString>1.5.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Calcite preheaders now drop repeated Unicode spacing characters used as invisible email padding instead of carrying them into the plain-text output.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.7-build-20261013.4/Jetstream-1.5.7-build-20261013.4.zip" length="10952884" type="application/octet-stream" sparkle:edSignature="4zXI8pmE6yIEZtxANsjO8HjMRjGj8PubcOJ1MqhrMTQ0hpUjmNNdPqCpQHL1HvwljVN3gVDALt6hI4Inuu78AA=="/>
+        </item>
+        <item>
             <title>1.5.6</title>
             <pubDate>Tue, 13 Oct 2026 13:45:27 -0700</pubDate>
             <sparkle:version>20261013.3</sparkle:version>
@@ -31,21 +44,6 @@
 <li>Calcite/Outlook HTML-to-text conversion now decodes curly double-quote entities (<code>&amp;ldquo;</code> and <code>&amp;rdquo;</code>) instead of leaving them visible in emails.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.5-build-20261012.1/Jetstream-1.5.5-build-20261012.1.zip" length="10936691" type="application/octet-stream" sparkle:edSignature="UqQCsM37koDj94euwoafZkPctRMcYn3gnc4b+I1XvB+Hwky71AkGtHyTlJp4vBT+4BMZaGmklXrDzcvfCcN+DA=="/>
-        </item>
-        <item>
-            <title>1.5.4</title>
-            <pubDate>Fri, 09 Oct 2026 15:03:10 -0700</pubDate>
-            <sparkle:version>20261009.1</sparkle:version>
-            <sparkle:shortVersionString>1.5.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Email Preview keeps its heading on a separate row from preview tools, giving the controls the full available width at narrower window sizes.</li>
-<li>The widget now uses a Team ID-prefixed App Group so macOS allows it to load its descriptor and appear in the Widget Gallery.</li>
-<li>The release package now includes extracted App Intents metadata, allowing Shortcuts to discover Jetstream&#x27;s App Shortcuts.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.4-build-20261009.1/Jetstream-1.5.4-build-20261009.1.zip" length="10936224" type="application/octet-stream" sparkle:edSignature="8Um5xKvTybMDd+g5UZRDWu24gG1/ZYcbqntR5nIzTKEVNvuygMZtDqSyUrFPxJcN4M458IufHhSH22perpIGDg=="/>
         </item>
     </channel>
 </rss>

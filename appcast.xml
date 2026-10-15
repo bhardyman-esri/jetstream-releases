@@ -3,6 +3,21 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.8</title>
+            <pubDate>Thu, 15 Oct 2026 12:40:00 -0700</pubDate>
+            <sparkle:version>20261015.2</sparkle:version>
+            <sparkle:shortVersionString>1.5.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Calcite plain-text footer and CTA URLs now decode HTML-encoded ampersands.</li>
+<li>Globe retains CTA links when a trailing period is included inside the link text.</li>
+<li>Email Preview controls now use the app&#x27;s translucent control surface instead of a bright bar background.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.8-build-20261015.2/Jetstream-1.5.8-build-20261015.2.zip" length="10952846" type="application/octet-stream" sparkle:edSignature="ivPuJVc4gbgEIFOCiCUHJ+17vrQvsZJnWcMSUZdah3I/V8g4XmIaB8ZF1VvNhJYTPp+LnUyupexrb3BqBlw9BA=="/>
+        </item>
+        <item>
             <title>1.5.7</title>
             <pubDate>Tue, 13 Oct 2026 18:19:10 -0700</pubDate>
             <sparkle:version>20261013.4</sparkle:version>
@@ -31,19 +46,6 @@
 <li>The widget extension now uses the standard app-extension entry point instead of exiting before responding to Widget Gallery requests.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.6-build-20261013.3/Jetstream-1.5.6-build-20261013.3.zip" length="10952608" type="application/octet-stream" sparkle:edSignature="ECt3ok3+oDKe/ByAMR3Fxdc/lbFWKxWSgEBjNrqf7Hj814QH+HoEsg4d3jVwzNVtBOXRIp5irMb5KTWRLzF5DA=="/>
-        </item>
-        <item>
-            <title>1.5.5</title>
-            <pubDate>Mon, 12 Oct 2026 12:18:39 -0700</pubDate>
-            <sparkle:version>20261012.1</sparkle:version>
-            <sparkle:shortVersionString>1.5.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Calcite/Outlook HTML-to-text conversion now decodes curly double-quote entities (<code>&amp;ldquo;</code> and <code>&amp;rdquo;</code>) instead of leaving them visible in emails.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.5-build-20261012.1/Jetstream-1.5.5-build-20261012.1.zip" length="10936691" type="application/octet-stream" sparkle:edSignature="UqQCsM37koDj94euwoafZkPctRMcYn3gnc4b+I1XvB+Hwky71AkGtHyTlJp4vBT+4BMZaGmklXrDzcvfCcN+DA=="/>
         </item>
     </channel>
 </rss>

@@ -3,6 +3,24 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.9</title>
+            <pubDate>Wed, 21 Oct 2026 12:02:35 -0700</pubDate>
+            <sparkle:version>20261021.1</sparkle:version>
+            <sparkle:shortVersionString>1.5.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li><strong>Save FWD Package</strong> exports the FWD HTML, a matching single-page PDF, and a shortcut to the SharePoint guide on choosing PDF or HTML for sharing email.</li>
+<li><strong>Help &gt; Export Diagnostics</strong> bundles local app state and saved hang reports without including source email content. A main-thread watchdog records unresponsive periods for troubleshooting.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Review Images keeps selection edits local until the sheet closes and isolates unchanged rows to reduce SwiftUI view-graph work.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.9-build-20261021.1/Jetstream-1.5.9-build-20261021.1.zip" length="10974569" type="application/octet-stream" sparkle:edSignature="IYFEkIp2vgT0Qsow+u/XEBN3XTpjx0FZD1EirYEPKy3jPC8vk5az+Le6FUKubKw+j62Vt4WjE1ZIzomrFqfGAg=="/>
+        </item>
+        <item>
             <title>1.5.8</title>
             <pubDate>Thu, 15 Oct 2026 12:40:00 -0700</pubDate>
             <sparkle:version>20261015.2</sparkle:version>
@@ -29,23 +47,6 @@
 <li>Calcite preheaders now drop repeated Unicode spacing characters used as invisible email padding instead of carrying them into the plain-text output.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.7-build-20261013.4/Jetstream-1.5.7-build-20261013.4.zip" length="10952884" type="application/octet-stream" sparkle:edSignature="4zXI8pmE6yIEZtxANsjO8HjMRjGj8PubcOJ1MqhrMTQ0hpUjmNNdPqCpQHL1HvwljVN3gVDALt6hI4Inuu78AA=="/>
-        </item>
-        <item>
-            <title>1.5.6</title>
-            <pubDate>Tue, 13 Oct 2026 13:45:27 -0700</pubDate>
-            <sparkle:version>20261013.3</sparkle:version>
-            <sparkle:shortVersionString>1.5.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Added</h4>
-<ul>
-<li>FWD HTML can now be exported as a single-page PDF with clickable links.</li>
-</ul>
-<h4>Fixed</h4>
-<ul>
-<li>The widget extension now uses the standard app-extension entry point instead of exiting before responding to Widget Gallery requests.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.6-build-20261013.3/Jetstream-1.5.6-build-20261013.3.zip" length="10952608" type="application/octet-stream" sparkle:edSignature="ECt3ok3+oDKe/ByAMR3Fxdc/lbFWKxWSgEBjNrqf7Hj814QH+HoEsg4d3jVwzNVtBOXRIp5irMb5KTWRLzF5DA=="/>
         </item>
     </channel>
 </rss>

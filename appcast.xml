@@ -3,6 +3,23 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.10</title>
+            <pubDate>Wed, 21 Oct 2026 12:18:04 -0700</pubDate>
+            <sparkle:version>20261021.2</sparkle:version>
+            <sparkle:shortVersionString>1.5.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li><code>jetstream://updates</code> opens Jetstream&#x27;s Check for Updates flow from a link.</li>
+</ul>
+<h4>Changed</h4>
+<ul>
+<li>Save FWD Package now prompts for an email name and uses it for the ZIP, HTML, and PDF filenames rather than deriving it from the source or HTML title.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.10-build-20261021.2/Jetstream-1.5.10-build-20261021.2.zip" length="10976056" type="application/octet-stream" sparkle:edSignature="Au5qXYK1W0f39tL3M66fuFooARA7rTahhN8HbXJMtP2XNDcqGg5HKpWY8IRBgakm5wneUkLPMkAMSSQEyZUiAQ=="/>
+        </item>
+        <item>
             <title>1.5.9</title>
             <pubDate>Wed, 21 Oct 2026 12:02:35 -0700</pubDate>
             <sparkle:version>20261021.1</sparkle:version>
@@ -34,19 +51,6 @@
 <li>Email Preview controls now use the app&#x27;s translucent control surface instead of a bright bar background.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.8-build-20261015.2/Jetstream-1.5.8-build-20261015.2.zip" length="10952846" type="application/octet-stream" sparkle:edSignature="ivPuJVc4gbgEIFOCiCUHJ+17vrQvsZJnWcMSUZdah3I/V8g4XmIaB8ZF1VvNhJYTPp+LnUyupexrb3BqBlw9BA=="/>
-        </item>
-        <item>
-            <title>1.5.7</title>
-            <pubDate>Tue, 13 Oct 2026 18:19:10 -0700</pubDate>
-            <sparkle:version>20261013.4</sparkle:version>
-            <sparkle:shortVersionString>1.5.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Calcite preheaders now drop repeated Unicode spacing characters used as invisible email padding instead of carrying them into the plain-text output.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.7-build-20261013.4/Jetstream-1.5.7-build-20261013.4.zip" length="10952884" type="application/octet-stream" sparkle:edSignature="4zXI8pmE6yIEZtxANsjO8HjMRjGj8PubcOJ1MqhrMTQ0hpUjmNNdPqCpQHL1HvwljVN3gVDALt6hI4Inuu78AA=="/>
         </item>
     </channel>
 </rss>

@@ -3,6 +3,24 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.5.11</title>
+            <pubDate>Wed, 28 Oct 2026 06:09:27 -0700</pubDate>
+            <sparkle:version>20261028.1</sparkle:version>
+            <sparkle:shortVersionString>1.5.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Link Report marks the exact approved <code>https://www.facebook.com/esrigis</code> link as &quot;Auto Verified&quot; with &quot;Facebook&quot; underneath instead of reporting Facebook&#x27;s bot-check error.</li>
+<li>Link Report action labels stay on one line in a separate, horizontally scrollable action row instead of wrapping in narrow windows, with actions aligned to the right.</li>
+<li>Copy and Copy Image actions now show a temporary confirmation or error message above the status bar and announce it to assistive technology.</li>
+<li>CTSS Mail preview branding now follows the workflow: Esri for Calcite, Globe, and Outlook; Maps.com only for the Maps.com workflow.</li>
+<li>Globe preserves article CTA URLs when an editor adds a Related link in the same paragraph, with each link&#x27;s URL on its own line.</li>
+<li>Globe now separates the footer with a solid line instead of asterisks, and avoids repeating footer email addresses as mailto URLs.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.11-build-20261028.1/Jetstream-1.5.11-build-20261028.1.zip" length="11004815" type="application/octet-stream" sparkle:edSignature="lxZCsN9bz1kXyh3sGU5W2hz5bwifJi9ozWq9XMF4nyP+1kNC/g/t4jzu27w5JvOGdiHUv6GnCld80RV66QqLDw=="/>
+        </item>
+        <item>
             <title>1.5.10</title>
             <pubDate>Wed, 21 Oct 2026 12:18:04 -0700</pubDate>
             <sparkle:version>20261021.2</sparkle:version>
@@ -36,21 +54,6 @@
 <li>Review Images keeps selection edits local until the sheet closes and isolates unchanged rows to reduce SwiftUI view-graph work.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.9-build-20261021.1/Jetstream-1.5.9-build-20261021.1.zip" length="10974569" type="application/octet-stream" sparkle:edSignature="IYFEkIp2vgT0Qsow+u/XEBN3XTpjx0FZD1EirYEPKy3jPC8vk5az+Le6FUKubKw+j62Vt4WjE1ZIzomrFqfGAg=="/>
-        </item>
-        <item>
-            <title>1.5.8</title>
-            <pubDate>Thu, 15 Oct 2026 12:40:00 -0700</pubDate>
-            <sparkle:version>20261015.2</sparkle:version>
-            <sparkle:shortVersionString>1.5.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Calcite plain-text footer and CTA URLs now decode HTML-encoded ampersands.</li>
-<li>Globe retains CTA links when a trailing period is included inside the link text.</li>
-<li>Email Preview controls now use the app&#x27;s translucent control surface instead of a bright bar background.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.5.8-build-20261015.2/Jetstream-1.5.8-build-20261015.2.zip" length="10952846" type="application/octet-stream" sparkle:edSignature="ivPuJVc4gbgEIFOCiCUHJ+17vrQvsZJnWcMSUZdah3I/V8g4XmIaB8ZF1VvNhJYTPp+LnUyupexrb3BqBlw9BA=="/>
         </item>
     </channel>
 </rss>

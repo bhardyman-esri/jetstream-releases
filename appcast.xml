@@ -3,6 +3,21 @@
     <channel>
         <title>Jetstream</title>
         <item>
+            <title>1.6.2</title>
+            <pubDate>Tue, 10 Nov 2026 08:27:24 -0800</pubDate>
+            <sparkle:version>20261110.1</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Preserve single-quoted image alt text when keeping images, and show complete captions containing quotation marks in Review Images.</li>
+<li>Restore the app icon in About Jetstream.</li>
+<li>FWD HTML and FWD PDF now remove the &quot;You received this…&quot; subscription notice along with the preference-center unsubscribe line.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.6.2-build-20261110.1/Jetstream-1.6.2-build-20261110.1.zip" length="11053234" type="application/octet-stream" sparkle:edSignature="zURm3J3wt5Q6ZaCJ/igcc4LiOa4WIbMsBHe5XmW5wfu+swXx2auyzyZ0FZda0eo4IKA3upBpSZ/OoDJoadd2Cg=="/>
+        </item>
+        <item>
             <title>1.6.1</title>
             <pubDate>Thu, 29 Oct 2026 10:43:57 -0700</pubDate>
             <sparkle:version>20261029.1</sparkle:version>
@@ -42,28 +57,6 @@
 <li>Keep the complete Settings panel, including its sidebar, within a centered 900-point maximum width.</li>
 </ul>]]></description>
             <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.6.0-build-20261028.4/Jetstream-1.6.0-build-20261028.4.zip" length="11054736" type="application/octet-stream" sparkle:edSignature="PZqFZo3WZSmZWj6j/Y2HfU8tSzp3+c6wKS7+SckpcfsjsI/aX7QHvftnv7KfPMudCapJB50R0B+iAH9GixcQBA=="/>
-        </item>
-        <item>
-            <title>1.6.0</title>
-            <pubDate>Wed, 28 Oct 2026 11:51:44 -0700</pubDate>
-            <sparkle:version>20261028.3</sparkle:version>
-            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h4>Added</h4>
-<ul>
-<li>Email preview links now open in the default browser when clicked or chosen from the context menu.</li>
-<li>Register Jetstream as an alternate application for opening <code>.html</code> and <code>.htm</code> files from Finder.</li>
-<li>Menu-bar actions to paste clipboard email into Jetstream or check its links in the background and copy the full tab-separated Link Report when no links need review.</li>
-<li>Desktop widget actions to check clipboard links and copy a report, or convert clipboard HTML and copy the selected output. The widget shows the latest report result and offers an explicit link to reopen Jetstream.</li>
-<li>Desktop widget can paste clipboard HTML into Jetstream&#x27;s Source tab.</li>
-</ul>
-<h4>Fixed</h4>
-<ul>
-<li>Publish the initial widget settings snapshot at app launch so new and existing widgets have current workflow and deliverable content.</li>
-<li>Keep the complete Settings panel, including its sidebar, within a centered 900-point maximum width.</li>
-</ul>]]></description>
-            <enclosure url="https://github.com/bhardyman-esri/jetstream-releases/releases/download/v1.6.0-build-20261028.3/Jetstream-1.6.0-build-20261028.3.zip" length="11054783" type="application/octet-stream" sparkle:edSignature="Sj/thotQHyv+ibgeH/wumkKrwxWceMvxNUCYevFp3pDXOvZ0ObaI23SCUbkOdRQJ0UeFJMOCTA+0yqx75ZyHCA=="/>
         </item>
     </channel>
 </rss>
